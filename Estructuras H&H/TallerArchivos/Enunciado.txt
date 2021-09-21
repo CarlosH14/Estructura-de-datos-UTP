@@ -1,0 +1,61 @@
+UNIVERSIDAD  TECNOLOGICA  DE  PEREIRA
+
+Programa Ingeniería en Sistemas y Computación
+
+Materia Estructuras de Datos
+
+ Proyecto sobre Manejo de Listas
+
+La aerolínea “VIAJAR”, desea hacer un manejo adecuado 
+de los vuelos que realiza periódicamente. De cada vuelo
+se tienen los siguientes datos: Nro de vuelo, ciudad 
+origen, ciudad destino, matrícula del avión, nombre del 
+piloto, hora del vuelo y fecha del vuelo, además se tiene 
+el estado del vuelo (programado o realizado). Cada vuelo 
+tiene a su vez asignado una lista de pasajeros; de cada 
+pasajero se tiene la cédula, el nombre, el teléfono y el 
+estado (con reserva o a bordo siempre que el vuelo no 
+se haya realizado).
+
+ 
+
+La información de los vuelos viene en el archivo de texto 
+“VUELOS.TXT” con el siguiente formato: nro de vuelo 
+(6 caracteres), origen (8), destino (8), matricula del 
+avion (6), nombre del piloto (20), hora de vuelo (4), 
+fecha de vuelo (6), estado (0: programado, 1: realizado). 
+
+Ejemplo de registro:
+
+123445BOGOTA—MEDELLIN222222FELIPE MONTENEGRO---10453101030
+
+ 
+
+Los datos de cada pasajero vienen en el archivo de texto 
+“PASAJERO.TXT”, numero  de vuelo (6 caracteres), cédula 
+(9), nombre (20), telefono (10), estado (1: reserva, 2: 
+a bordo). 
+
+Ejemplo de registro:
+
+12345687654321ANA MARIA RAMÍREZ---03632134521
+
+
+
+La información de los vuelos se sube a memoria y se almacenan 
+en una lista que contiene  una estructura con el mismo formato 
+del archivo, con los pasajeros también sucede lo mismo
+
+El programa debe permitir hacer lo siguiente:
+
+Crear una estructura de multilista para el manejo de los datos 
+de la aerolinea, con los vuelos como la lista principal y para 
+cada vuelo la sublista de pasajeros.
+Se debe poder adicionar vuelos.
+Adicionar pasajeros
+Obtener listados (pasajeros de un vuelo realizado o programado, 
+lista de vuelos programados, lista de vuelos realizados).
+Dada la cédula de una persona, obtener un listado de los vuelos 
+que ha realizado y de los vuelos que tiene programado realizar.
+Cuando se hace un vuelo, se debe modificar el estado del vuelo a realizado.
+Se debe tener una opción que permita registrar cuando un pasajero pasa a bordo.
